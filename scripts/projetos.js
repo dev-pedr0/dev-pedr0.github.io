@@ -143,4 +143,13 @@ const videos = [
         text2: "Linguagens e Ferramentas utilizadas: Java (spring boot), HTML, CSS, javascript, MySQL",
         githubLink: "https://github.com/dev-pedr0/cadastro-spring-boot"
     },
+    {
+        name: "Bookmania - Aluguel e Compra de Livros",
+        main: true,
+        tag: "c#",
+        source: "../videos/projeto-bookmania.mp4",
+        text: "Bookmania é um site completo de aluguel e compra de livros, desenvolvido com ASP.NET Core e Razor Pages. Conta com sistema de login e autenticação com controle de acesso baseado em papéis (cliente, funcionário e gerente). O usuário pode adicionar livros ao carrinho, finalizar pedidos e visualizar histórico. Funcionários e gerentes têm funções administrativas específicas. Sessões são usadas para manter o carrinho temporariamente ativo durante a navegação.",
+        text2: "Linguagens e Ferramentas utilizadas: ASP.NET Core, Razor Pages, C#, Entity Framework Core, SQL Server, ASP.NET Identity, Session State.",
+        githubLink: "https://github.com/dev-pedr0/Bookmania" 
+    }
 ];
