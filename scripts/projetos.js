@@ -151,5 +151,14 @@ const videos = [
         text: "Bookmania é um site completo de aluguel e compra de livros, desenvolvido com ASP.NET Core e Razor Pages. Conta com sistema de login e autenticação com controle de acesso baseado em papéis (cliente, funcionário e gerente). O usuário pode adicionar livros ao carrinho, finalizar pedidos e visualizar histórico. Funcionários e gerentes têm funções administrativas específicas. Sessões são usadas para manter o carrinho temporariamente ativo durante a navegação.",
         text2: "Linguagens e Ferramentas utilizadas: ASP.NET Core, Razor Pages, C#, Entity Framework Core, SQL Server, ASP.NET Identity, Session State.",
         githubLink: "https://github.com/dev-pedr0/Bookmania" 
+    },
+    {
+        name: "Cronologia - Crie seu Histórico de Eventos",
+        main: true,
+        tag: "react",
+        source: "../videos/projeto-cronologia-react-vite.mp4",
+        text: "Como bom mestre de RPG eu sempre senti falta de um local para organizar a cronologia de eventos que acontecem nos meus mundos. No word não é prático, no excel é feio, então onde? E disso surgiu o projeto Cronologia. Nesse site, feito em React com vite, o usuário é capaz de criar eventos, mudar sua posição, visualiza-lo como linha do tempo e fazer filtros específicos. Foi utilizado o Zustand para fazer salvamento local dos eventos no navegador e também é possível importar e exportar um json com os dados de todos os eventos criados.",
+        text2: "Linguagens e Ferramentas utilizadas: React, Vite, TailwindCss, Drang-and-drop kit, Framer Motion, Lucide React, Zustand, Typescript",
+        githubLink: "https://github.com/dev-pedr0/vite-react-cronologia-rpg" 
     }
 ];
