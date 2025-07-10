@@ -82,7 +82,7 @@ const videos = [
     },
     {
         name: "Cookie Clicker",
-        main: true,
+        main: false,
         tag: "java",
         source: "../videos/Projeto-java-cookie-clicker.mp4",
         text: "Java não só é útil no backend, como támbem possuí suporte para criação de interfaces. Este projeto foi uma pequena cópia do site cookie clicker, que ficou muito conhecido a alguns anos atrás. A ideia é clicar no biscoito e comprar itens que gerem mais cliques no biscoito e isso gera um ciclo contínuo. Nessa interface é possível tanto realizar o clique manual quanto comprar um item que clica para você. Por fim o botão de reset permite começar o jogo do zero. Esse projeto pode ser estendido com mais itens e também a criação de uma segunda interface onde você pode ver tudo que já adquiriu com seus biscoitos.",
@@ -127,7 +127,7 @@ const videos = [
     },
     {
         name: "Sistema de Combate por Turno",
-        main: true,
+        main: false,
         tag: "c#",
         source: "../videos/Turn-Based-Combat-C-Sharp.mp4",
         text: "Como um grande fã de tudo RPG, este projeto foi é o início da minha exploração de interfaces de jogos. Aqui é um pequeno sistema de combate por turno, onde o jogador pode escolher entre atacar e se curar, porém começando do simples é possível chegar ao complexo. Novas habilidades podem ser adicionadas, personagens, e inimigos. É realmente interessante ver como o C# possui essa capacidade de produzir jogos, visto que a Unity utiliza ele como linguagem.",
