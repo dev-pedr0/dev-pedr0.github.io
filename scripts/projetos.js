@@ -17,15 +17,15 @@ const videos = [
         text2: "Linguagens e Ferramentas utilizadas: Java, Java Swing.",
         githubLink: "https://github.com/dev-pedr0/To-Do-List-Java"
     },
-    {
-        name: "Antigo Portifólio",
-        main: false,
-        tag: "javascript",
-        source: "../videos/js-old-portifolio.mp4",
-        text: "Esta foi minha entrega final durante o semestre de introdução de desenvolvimento web no instituto Infnet. Foi meu primeiro portfólio e a jornada para construí-lo foi muito gratificante. Este novo site onde você está é a versão 2.0 do antigo site. O objetivo dos dois é apresentar quem sou e o que sou capaz de desenvolver. Busquei atualizar a imagem do site, deixando ele mais profissional e utilizando ferramentas mais complexas para demonstrar minha evolução de conhecimento. E quem sabe um dia sairá uma versão ainda melhor, a 3.0? Aceito sugestões.",
-        text2: "Linguagens e Ferramentas utilizadas: HTML 5, CSS 3, Javascript.",
-        githubLink: "https://github.com/dev-pedr0/portifolio"
-    },
+    // {
+    //     name: "Antigo Portifólio",
+    //     main: false,
+    //     tag: "javascript",
+    //     source: "../videos/js-old-portifolio.mp4",
+    //     text: "Esta foi minha entrega final durante o semestre de introdução de desenvolvimento web no instituto Infnet. Foi meu primeiro portfólio e a jornada para construí-lo foi muito gratificante. Este novo site onde você está é a versão 2.0 do antigo site. O objetivo dos dois é apresentar quem sou e o que sou capaz de desenvolver. Busquei atualizar a imagem do site, deixando ele mais profissional e utilizando ferramentas mais complexas para demonstrar minha evolução de conhecimento. E quem sabe um dia sairá uma versão ainda melhor, a 3.0? Aceito sugestões.",
+    //     text2: "Linguagens e Ferramentas utilizadas: HTML 5, CSS 3, Javascript.",
+    //     githubLink: "https://github.com/dev-pedr0/portifolio"
+    // },
     {
         name: "Pokemon Pokedex",
         main: false,
@@ -160,5 +160,14 @@ const videos = [
         text: "Como bom mestre de RPG eu sempre senti falta de um local para organizar a cronologia de eventos que acontecem nos meus mundos. No word não é prático, no excel é feio, então onde? E disso surgiu o projeto Cronologia. Nesse site, feito em React com vite, o usuário é capaz de criar eventos, mudar sua posição, visualiza-lo como linha do tempo e fazer filtros específicos. Foi utilizado o Zustand para fazer salvamento local dos eventos no navegador e também é possível importar e exportar um json com os dados de todos os eventos criados.",
         text2: "Linguagens e Ferramentas utilizadas: React, Vite, TailwindCss, Drang-and-drop kit, Framer Motion, Lucide React, Zustand, Typescript",
         githubLink: "https://github.com/dev-pedr0/vite-react-cronologia-rpg" 
-    }
+    },
+    {
+        name: "Controle Financeiro",
+        main: true,
+        tag: "javascript",
+        source: "../videos/projeto-vue-controle-financeiro.mp4",
+        text: "Nem sempre o excel ou programas já existentes organizam sua vida financeira como você gostaria. Então porque não fazer o seu próprio site de controle financeiro. Esse foi um projeto feito em Vue que permite o input de entradas e saídas de valor separados por categorias. Assim é possível saber o saldo total e obter um gráfico de gastos para uma visualização melhor do que está pensando mais financeiramente.",
+        text2: "Linguagens e Ferramentas utilizadas: Vue 3, Pinia, Vue Router, Tailwind Css, Chart.js",
+        githubLink: "https://github.com/dev-pedr0/vue-project"
+    },
 ];
