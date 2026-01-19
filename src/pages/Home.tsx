@@ -1,3 +1,4 @@
+import ScrollArrow from "../components/ScrollArrow";
 import TypeWriter from "../components/TypeWriter";
 
 export default function Home() {
@@ -43,31 +44,10 @@ export default function Home() {
             </div>
 
             {/* Seta */}
-            <a
-                href="#projetos"
-                className="
-                absolute bottom-8
-                flex flex-col items-center gap-2
-                text-text-secondary
-                hover:text-accent-primary
-                transition-colors
-                "
-                aria-label="Ir para Projetos"
-            >
-                <span className="text-xs tracking-wide uppercase">
-                    Ver projetos
-                </span>
-
-                <img
-                    src="/imgs/down-arrow.svg"
-                    alt=""
-                    className="
-                        w-6
-                        animate-bounce
-                        opacity-80
-                    "
-                />
-            </a>
+            <ScrollArrow
+                to="/projetos"
+                label="Ver projetos"
+            />
         </section>
     )
 };
