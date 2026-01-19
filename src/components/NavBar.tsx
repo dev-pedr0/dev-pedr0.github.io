@@ -44,33 +44,34 @@ const NavBar = () => {
       </div>
 
       {/* Menu mobile */}
-      {open && (
-        <nav
+      <nav
         className={`
           md:hidden
           mt-4
           card
           flex flex-col gap-4
+          overflow-hidden
           transform transition-all duration-300 ease-out
-          ${open
-            ? "opacity-100 translate-y-0 pointer-events-auto"
-            : "opacity-0 -translate-y-2 pointer-events-none"}
+          ${
+            open
+              ? "opacity-100 translate-y-0 max-h-125"
+              : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"
+          }
         `}
       >
-          {navItems.map(item => (
-            <NavLink
-              key={item.label}
-              to={item.path}
-              className="py-2 border-b border-white/10 last:border-0"
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </NavLink>
-          ))}
+        {navItems.map(item => (
+          <NavLink
+            key={item.label}
+            to={item.path}
+            className="py-2 border-b border-white/10 last:border-0"
+            onClick={() => setOpen(false)}
+          >
+            {item.label}
+          </NavLink>
+        ))}
 
-          <SocialLinks />
-        </nav>
-      )}
+        <SocialLinks />
+      </nav>
     </header>
   )
 }
