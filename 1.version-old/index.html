@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>Pedro Costa - Desenvolvedor</title>
+        <link rel="icon" href="imgs/monogram-dev-pedro.png" type="image/png">
+    </head>
+    <body>
+        <div class="background-container">
+            <div class="screen-container">
+                <div class="navbar-container">
+                    <nav class="nav nav-1">
+                        <ul>
+                            <li class="hove-click">
+                                <a class="link-logo link-active" href="#home">
+                                    <img class="logo" src="imgs/monogram-dev-pedro.png" alt="logo"/>
+                                    <span>Dev Pedro</span>                               
+                                </a>                            
+                            </li>
+                            <li class="hove-click">
+                                <a href="#projetos">
+                                    Projetos
+                                </a>
+                            </li>
+                            <li class="hove-click">
+                                <a href="#certificacao">
+                                    Certificações
+                                </a>
+                            </li>
+                            <li class="hove-click">
+                                <a href="#sobre">
+                                    Sobre
+                                </a>
+                            </li>
+                            <li class="hove-click">
+                                <a href="#contato">
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>                    
+                    </nav>
+                    <!--Ícones por Icons8 / https://icons8.com.br-->
+                    <nav class="nav nav-2">
+                        <ul>
+                            <li class="hove-click">
+                                <a href="https://www.linkedin.com/in/pedro-conceicao1/" target="_blank">
+                                    <img class="img-small" src="imgs/linkedin.png" alt="linkedin">
+                                </a>                                                     
+                            </li>
+                            <li class="hove-click">
+                                <a href="https://github.com/dev-pedr0" target="_blank">
+                                    <img class="img-small" src="imgs/github.png" alt="github">
+                                </a>
+                            </li>
+                            <li class="hove-click">
+                                <a href="mailto:pedro4costa@outlook.com" target="_blank">
+                                    <img class="img-small" src="imgs/email.png" alt="email">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="clipped-background"></div>
+                <content class="content-container">Carregando conteúdo...</content>
+            </div>
+        </div>
+            
+        <script src="script.js"></script>
+        <script src="scripts/projetos.js"></script>
+        <script src="scripts/certifications.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+            (function(){
+                emailjs.init("LCTgshI0j4Qgw9bKh");
+            })();
+        </script>
+    </body>
+</html>
