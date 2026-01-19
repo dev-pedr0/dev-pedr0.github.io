@@ -1,3 +1,5 @@
+import TypeWriter from "../components/TypeWriter";
+
 export default function Home() {
     return (
         <section
@@ -27,7 +29,9 @@ export default function Home() {
                     </span>
                 </h1>
 
-                <p
+                <TypeWriter
+                    text="Meu trabalho é transformar conceitos em interfaces funcionais e impactantes. Desenvolvo páginas e aplicações com foco na experiência do usuário e performance eficiente."
+                    speed={30}
                     className="
                         mt-4
                         text-sm text-text-secondary
@@ -35,11 +39,7 @@ export default function Home() {
                         md:text-lg
                         lg: px-10
                     "
-                >
-                    Meu trabalho é transformar conceitos em interfaces funcionais
-                    e impactantes. Desenvolvo páginas e aplicações com foco em
-                    experiência do usuário e performance eficiente.
-                </p>
+                />
             </div>
 
             {/* Seta */}
