@@ -1,15 +1,12 @@
+import Layout from "./layouts/Layout"
+
 function App() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-zinc-900 text-zinc-100">
+    <Layout>
       <h1 className="text-4xl font-bold">
-        Meu portfólio 🚀
+        Carregando conteúdo...
       </h1>
-      <section className="section-box mt-12 flex flex-col gap-6">
-        <h2 className="text-2xl font-bold uppercase">
-          Projetos
-        </h2>
-      </section>
-    </main>
+    </Layout>
   )
 }
 

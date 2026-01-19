@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 /* =========================
-   Color Themes
+   Tema de Cores
 ========================= */
 
 @theme {
-  /* Backgrounds */
+  /* Fundos */
   --color-bg-primary: #010204;
   --color-bg-secondary: #2c3e50;
   --color-bg-card: #2c3e50;
   --color-bg-hover-dark: #1b2631;
 
-  /* Text */
+  /* Texto */
   --color-text-primary: #ffffff;
   --color-text-secondary: #aaaaaa;
 
-  /* Accents */
+  /* Destaques */
   --color-accent-primary: #00bcd4;
   --color-accent-secondary: #1abc9c;
 
-  /* Buttons */
+  /* Botões */
   --color-button-primary: #3498db;
   --color-button-hover: #2980b9;
 }
@@ -58,14 +58,15 @@
 }
 
 /* =========================
-   Global Components
+   Componentes Globais
 ========================= */
 
 @layer components {
   .container-page {
-    width: 90vw;
-    min-height: 100vh;
+    width: 100%;
+    max-width: 425px;
     margin-inline: auto;
+    padding: 0.75rem;
   }
 
   .card {
@@ -124,6 +125,39 @@
   .section-box {
     background-color: var(--color-bg-secondary);
     border-radius: 0.75rem;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 }
+
+/* =========================
+   Media de Components
+========================= */
+  @media (min-width: 640px) {
+    .container-page {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container-page {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-page {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container-page {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container-page {
+      max-width: 1536px;
+    }
+  }
