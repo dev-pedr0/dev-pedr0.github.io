@@ -27,7 +27,7 @@ const NavBar = () => {
           className="md:hidden text-2xl"
           aria-label="Abrir menu"
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
 
         {/* Menu desktop */}
@@ -51,7 +51,18 @@ const NavBar = () => {
 
       {/* Menu mobile */}
       {open && (
-        <nav className="md:hidden mt-4 card flex flex-col gap-4">
+        <nav
+        className={`
+          md:hidden
+          mt-4
+          card
+          flex flex-col gap-4
+          transform transition-all duration-300 ease-out
+          ${open
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none"}
+        `}
+      >
           {navItems.map(item => (
             <a
               key={item.label}
