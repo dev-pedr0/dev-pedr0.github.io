@@ -16,7 +16,7 @@ const Layout = ({ children }: Props) => {
           className="
             hidden md:block
             absolute top-1/2 left-1/2
-            w-[80%] h-[80%] max-w-[700px]
+            w-[80%] h-[80%] max-w-175
             -translate-x-1/2 -translate-y-1/2
             bg-(--color-bg-secondary)
             [clip-path:polygon(50%_0%,100%_50%,50%_100%,0%_50%)]
