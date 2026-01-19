@@ -1,13 +1,6 @@
 import { useState } from "react";
-import logo from "../assets/imgs/monogram-dev-pedro.png"
+import { images, navItems, siteContent } from "../content"
 import SocialLinks from "./SocialLinks"
-
-const navItems = [
-  { label: "Projetos", href: "#projetos" },
-  { label: "Certificações", href: "#certificacoes" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Contato", href: "#contato" },
-]
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -17,8 +10,8 @@ const NavBar = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 font-bold">
-          <img src={logo} alt="Logo" className="w-10 sm:w-12" />
-          <span className="text-accent-primary">Dev Pedro</span>
+          <img src={images.logo} alt="Logo" className="w-10 sm:w-12" />
+          <span className="text-accent-primary">{siteContent.brand}</span>
         </a>
 
         {/* Botão mobile */}
