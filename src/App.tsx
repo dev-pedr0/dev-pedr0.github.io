@@ -1,13 +1,7 @@
-import Layout from "./layouts/Layout"
+import Router from "./routes/Router"
 
 function App() {
-  return (
-    <Layout>
-      <h1 className="text-4xl font-bold">
-        Carregando conteúdo...
-      </h1>
-    </Layout>
-  )
+  return <Router />
 }
 
 export default App

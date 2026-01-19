@@ -1,0 +1,73 @@
+export default function Home() {
+    return (
+        <section
+            id="home"
+            className="
+                relative z-10
+                flex flex-col items-center justify-center
+                text-center
+                px-6
+                min-h-[70vh]
+                md:px-30
+            "
+        >
+            {/* Texto principal */}
+            <div className="max-w-xl">
+                <h1
+                    className="
+                        text-2xl font-extrabold leading-tight
+                        sm:text-3xl
+                        md:text-4xl
+                        lg:text-5xl
+                    "
+                >
+                    Da Ideia Criativa para o
+                    <span className="text-accent-primary block">
+                        Código Eficiente
+                    </span>
+                </h1>
+
+                <p
+                    className="
+                        mt-4
+                        text-sm text-text-secondary
+                        sm:text-base
+                        md:text-lg
+                        lg: px-10
+                    "
+                >
+                    Meu trabalho é transformar conceitos em interfaces funcionais
+                    e impactantes. Desenvolvo páginas e aplicações com foco em
+                    experiência do usuário e performance eficiente.
+                </p>
+            </div>
+
+            {/* Seta */}
+            <a
+                href="#projetos"
+                className="
+                absolute bottom-8
+                flex flex-col items-center gap-2
+                text-text-secondary
+                hover:text-accent-primary
+                transition-colors
+                "
+                aria-label="Ir para Projetos"
+            >
+                <span className="text-xs tracking-wide uppercase">
+                    Ver projetos
+                </span>
+
+                <img
+                    src="/imgs/down-arrow.svg"
+                    alt=""
+                    className="
+                        w-6
+                        animate-bounce
+                        opacity-80
+                    "
+                />
+            </a>
+        </section>
+    )
+};

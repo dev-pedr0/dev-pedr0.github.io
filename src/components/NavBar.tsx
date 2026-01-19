@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { images, navItems, siteContent } from "../content"
 import SocialLinks from "./SocialLinks"
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -9,10 +10,10 @@ const NavBar = () => {
     <header className="relative z-20">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2 font-bold">
+        <NavLink to="/" className="flex items-center gap-2 font-bold">
           <img src={images.logo} alt="Logo" className="w-10 sm:w-12" />
           <span className="text-accent-primary">{siteContent.brand}</span>
-        </a>
+        </NavLink>
 
         {/* Botão mobile */}
         <button
@@ -26,13 +27,13 @@ const NavBar = () => {
         {/* Menu desktop */}
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map(item => (
-            <a
+            <NavLink
               key={item.label}
-              href={item.href}
+              to={item.path}
               className="hover:text-accent-primary transition"
             >
               {item.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
@@ -57,14 +58,14 @@ const NavBar = () => {
         `}
       >
           {navItems.map(item => (
-            <a
+            <NavLink
               key={item.label}
-              href={item.href}
+              to={item.path}
               className="py-2 border-b border-white/10 last:border-0"
               onClick={() => setOpen(false)}
             >
               {item.label}
-            </a>
+            </NavLink>
           ))}
 
           <SocialLinks />

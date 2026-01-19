@@ -3,9 +3,10 @@ export interface NavItem {
   href: string
 }
 
-export const navItems: NavItem[] = [
-  { label: "Projetos", href: "#projetos" },
-  { label: "Certificações", href: "#certificacoes" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Contato", href: "#contato" },
+export const navItems = [
+  { label: "Home", path: "/" },
+  { label: "Projetos", path: "/projetos" },
+  { label: "Certificações", path: "/certificacoes" },
+  { label: "Sobre", path: "/sobre" },
+  { label: "Contato", path: "/contato" },
 ]
