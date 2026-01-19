@@ -1,11 +1,7 @@
-import { AnimatePresence } from "framer-motion"
 import NavBar from "../components/NavBar"
-import { Outlet, useLocation } from "react-router-dom"
-import PageTransition from "../components/PageTransition"
+import { Outlet } from "react-router-dom"
 
-const Layout = () => {
-  const location = useLocation()
-  
+const Layout = () => { 
   return (
     <div
       className="
