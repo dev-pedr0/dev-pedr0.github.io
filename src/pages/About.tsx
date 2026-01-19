@@ -1,6 +1,10 @@
+import PageTransition from "../components/PageTransition"
+
 const About = () => {
   return (
-    <div>About</div>
+    <PageTransition>
+        <div>Sobre</div>
+    </PageTransition>
   )
 }
 

@@ -1,7 +1,9 @@
+import PageTransition from "../components/PageTransition";
+
 export default function Contact() {
     return (
-        <div>
-            Contato
-        </div>
+    <PageTransition>
+        <div>Contato</div>
+    </PageTransition>
     )
 };

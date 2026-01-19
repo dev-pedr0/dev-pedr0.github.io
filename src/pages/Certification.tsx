@@ -1,6 +1,10 @@
+import PageTransition from "../components/PageTransition"
+
 const Certification = () => {
   return (
-    <div>Certification</div>
+    <PageTransition>
+        <div>Certificação</div>
+    </PageTransition>
   )
 }
 

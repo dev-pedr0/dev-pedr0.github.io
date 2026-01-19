@@ -1,7 +1,11 @@
+import { AnimatePresence } from "framer-motion"
 import NavBar from "../components/NavBar"
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
+import PageTransition from "../components/PageTransition"
 
 const Layout = () => {
+  const location = useLocation()
+  
   return (
     <div
       className="
@@ -35,7 +39,7 @@ const Layout = () => {
           "
         />
 
-        {/* Conteúdo das páginas */}
+        {/* Conteúdo das páginas com transição */}
         <main
           className="
             relative z-10
