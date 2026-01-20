@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# 🚀 Portfólio — Pedro Costa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meu portfólio pessoal como desenvolvedor, criado para apresentar projetos, certificações e informações de contato de forma moderna, responsiva e performática.
 
-Currently, two official plugins are available:
+🔗 **Acesse:** https://dev-pedr0.github.io
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Vite**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Router (HashRouter)**
+- **Framer Motion** (transições)
+- **EmailJS** (formulário de contato)
+- **GitHub Pages** (deploy)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📱 Design & UX
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Mobile First (425px como base)
+- Totalmente responsivo  
+  (`640px · 768px · 1024px · 1280px · 1536px`)
+- Transições suaves entre páginas
+- Componentes reutilizáveis
+- Conteúdo centralizado e organizado
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Estrutura do projeto
+src/
+├─ components/ # Componentes reutilizáveis
+├─ content/ # Textos, links, imagens e dados
+├─ layouts/ # Layout base
+├─ pages/ # Páginas (Home, Projetos, Sobre, etc)
+├─ routes/ # Configuração de rotas
+└─ styles/ # CSS global
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📬 Contato
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Email:** pedro4costa@outlook.com  
+- **LinkedIn:** [pedro-conceicao1](https://www.linkedin.com/in/pedro-conceicao1/)  
+- **GitHub:** [dev-pedr0](https://github.com/dev-pedr0)
+
+---
+
+## 📌 Observações
+
+Este projeto substitui a versão antiga em HTML, CSS e JS puro, agora utilizando uma stack moderna focada em escalabilidade, manutenção e experiência do usuário.
