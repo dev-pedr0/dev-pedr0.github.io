@@ -70,6 +70,7 @@ export default function Home() {
                 <ScrollArrow
                     to="/projetos"
                     label="Ver projetos"
+                    absolute={true}
                 />
             </section>
         </PageTransition>    
