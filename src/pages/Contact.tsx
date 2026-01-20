@@ -1,8 +1,32 @@
+import { useRef } from "react";
 import PageTransition from "../components/PageTransition";
 import ScrollArrow from "../components/ScrollArrow";
 import { ContactContent } from "../content";
+import emailjs from "@emailjs/browser"
 
 export default function Contact() {
+    const formRef = useRef<HTMLFormElement | null>(null)
+    
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault()
+
+        if (!formRef.current) return
+
+        emailjs.sendForm(
+        "service_hfu5rlj",
+        "template_qjnodrs",
+        formRef.current,
+        "LCTgshI0j4Qgw9bKh"
+        )
+        .then(() => {
+        alert("Mensagem enviada com sucesso!")
+        formRef.current?.reset()
+        })
+        .catch(() => {
+        alert("Erro ao enviar mensagem.")
+        })
+    }
+
     return (
         <PageTransition>
             <div
@@ -63,12 +87,17 @@ export default function Contact() {
                     {/* Formulário */}
                     <section className="flex flex-col gap-4 bg-bg-secondary rounded-2xl p-6 sm:p-8">
                         <h2 className="text-2xl font-semibold text-left">
-                        Me mande uma mensagem
+                            Me mande uma mensagem
                         </h2>
 
-                        <form className="flex flex-col gap-4">
+                        <form 
+                            className="flex flex-col gap-4"
+                            ref={formRef}
+                            onSubmit={sendEmail}
+                        >
                             <input
                                 type="text"
+                                name="name"
                                 placeholder="Seu nome"
                                 className="
                                 p-3 rounded-lg
@@ -82,6 +111,7 @@ export default function Contact() {
 
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Seu email"
                                 className="
                                 p-3 rounded-lg
@@ -95,6 +125,7 @@ export default function Contact() {
 
                             <textarea
                                 placeholder="Sua mensagem"
+                                name="message"
                                 rows={5}
                                 className="
                                 p-3 rounded-lg
