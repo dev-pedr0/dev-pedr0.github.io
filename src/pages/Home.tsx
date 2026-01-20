@@ -9,16 +9,17 @@ export default function Home() {
             
             {/* Losango decorativo */}
             <div
-            className="
-                hidden sm:block
-                absolute top-1/2 left-1/2
-                w-[90%] h-full
-                max-w-175
-                -translate-x-1/2 -translate-y-1/2
-                bg-(--color-bg-secondary)
-                [clip-path:polygon(50%_0%,100%_50%,50%_100%,0%_50%)]
-                z-0
-            "
+            // className="
+            //     hidden sm:block
+            //     absolute top-1/2 left-1/2
+            //     w-full h-full
+            //     max-w-175
+            //     -translate-x-1/2 -translate-y-1/2
+            //     bg-(--color-bg-secondary)
+            //     [clip-path:polygon(50%_0%,100%_50%,50%_100%,0%_50%)]
+            //     z-0
+            // "
+            className="bg-diamond"
             />
 
             <section
@@ -42,7 +43,7 @@ export default function Home() {
                             text-2xl font-extrabold leading-tight
                             sm:text-3xl
                             md:text-4xl
-                            lg:text-5xl
+                            2xl:text-5xl
                         "
                     >
                         {HomeContent.title_half_one}
