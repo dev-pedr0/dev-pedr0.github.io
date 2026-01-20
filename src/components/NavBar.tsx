@@ -30,7 +30,14 @@ const NavBar = () => {
             <NavLink
               key={item.label}
               to={item.path}
-              className="hover:text-accent-primary transition"
+              className={({isActive}) =>
+              `
+                ${isActive
+                ? "text-accent-primary"
+                : "text-text-primary hover:text-accent-primary"}
+                hover:text-accent-primary transition
+              `
+              }
             >
               {item.label}
             </NavLink>
@@ -63,7 +70,14 @@ const NavBar = () => {
           <NavLink
             key={item.label}
             to={item.path}
-            className="py-2 border-b border-white/10 last:border-0"
+            className={({isActive}) =>
+              `
+                ${isActive
+                ? "text-accent-primary"
+                : "text-text-primary hover:text-accent-primary"}
+                hover:text-accent-primary transition
+              `
+            }
             onClick={() => setOpen(false)}
           >
             {item.label}
