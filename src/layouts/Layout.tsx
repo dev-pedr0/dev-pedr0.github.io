@@ -14,7 +14,7 @@ const Layout = () => {
         backgroundImage: `url(${images.background})`,
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        backgroundSize: "100% auto",
       }}
     >
       <div
