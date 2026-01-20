@@ -44,43 +44,66 @@ export default function Contact() {
                 "
                 >
                     {/* Lista de contatos */}
-                    <section className="flex flex-col bg-bg-secondary gap-4 text-left rounded-2xl p-6 sm:p-8">
-                        <h2 className="text-2xl font-semibold text-center">
+                    <section className="
+                        bg-bg-secondary
+                        rounded-2xl
+                        p-6 sm:p-8
+                        flex flex-col
+                    "
+                    >
+                        <h2 className="text-2xl mb-4 font-semibold text-center">
                             {ContactContent.title}
                         </h2>
 
-                        <ul className="flex flex-col gap-3 text-sm sm:text-base">
-                            <li>
-                                <strong>Email:</strong>{" "}
-                                <a
-                                    href={ContactContent.email_href}
-                                    className="text-accent-primary hover:underline"
-                                >
-                                    {ContactContent.email}
-                                </a>
-                            </li>
+                          <ul
+                            className="
+                            flex flex-col
+                            grow
+                            gap-4
+                            text-sm sm:text-base
+                            "
+                        >
+                            {[
+                            {
+                                label: "Email",
+                                value: ContactContent.email,
+                                href: ContactContent.email_href,
+                            },
+                            {
+                                label: "LinkedIn",
+                                value: ContactContent.linkedin_short,
+                                href: ContactContent.linkedin,
+                            },
+                            {
+                                label: "GitHub",
+                                value: ContactContent.github_short,
+                                href: ContactContent.github,
+                            },
+                            ].map(item => (
+                            <li
+                                key={item.label}
+                                className="
+                                flex items-center justify-between
+                                bg-bg-primary
+                                rounded-xl
+                                px-4 py-3
+                                grow
+                                lg:text-xl
+                                "
+                            >
+                                <span className="font-medium">
+                                {item.label}
+                                </span>
 
-                            <li>
-                                <strong>LinkedIn:</strong>{" "}
                                 <a
-                                    href={ContactContent.linkedin}
-                                    target="_blank"
-                                    className="text-accent-primary hover:underline"
+                                href={item.href}
+                                target="_blank"
+                                className="text-accent-primary hover:underline"
                                 >
-                                    {ContactContent.linkedin_short}
+                                {item.value}
                                 </a>
                             </li>
-
-                            <li>
-                                <strong>GitHub:</strong>{" "}
-                                <a
-                                    href={ContactContent.github}
-                                    target="_blank"
-                                    className="text-accent-primary hover:underline"
-                                >
-                                    {ContactContent.github_short}
-                                </a>
-                            </li>
+                            ))}
                         </ul>
                     </section>
 
