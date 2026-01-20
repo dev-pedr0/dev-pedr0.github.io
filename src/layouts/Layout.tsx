@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar"
 import { Outlet } from "react-router-dom"
+import { images } from "../content"
 
 const Layout = () => { 
   return (
@@ -9,6 +10,12 @@ const Layout = () => {
         bg-bg-primary
         flex justify-center
       "
+      style={{
+        backgroundImage: `url(${images.background})`,
+        backgroundPosition: "top center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
     >
       <div
         className="

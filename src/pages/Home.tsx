@@ -1,6 +1,7 @@
 import PageTransition from "../components/PageTransition";
 import ScrollArrow from "../components/ScrollArrow";
 import TypeWriter from "../components/TypeWriter";
+import { HomeContent } from "../content";
 
 export default function Home() {
     return (
@@ -28,7 +29,10 @@ export default function Home() {
                     text-center
                     px-6
                     min-h-[70vh]
+                    md:mt-10
                     md:px-30
+                    lg:mt-18
+                    2xl:mt-25
                 "
             >
                 {/* Texto principal */}
@@ -41,15 +45,15 @@ export default function Home() {
                             lg:text-5xl
                         "
                     >
-                        Da Ideia Criativa para o
+                        {HomeContent.title_half_one}
                         <span className="text-accent-primary block">
-                            Código Eficiente
+                            {HomeContent.title_half_two}
                         </span>
                     </h1>
 
                     {/* Texto com efeito de digitação */}
                     <TypeWriter
-                        text="Meu trabalho é transformar conceitos em interfaces funcionais e impactantes. Desenvolvo páginas e aplicações com foco na experiência do usuário e performance eficiente."
+                        text={HomeContent.main_text}
                         speed={30}
                         className="
                             mt-4

@@ -1,6 +1,9 @@
-export const siteContent = {
-  title: "Pedro Costa - Desenvolvedor",
+export const NavContent = {
   brand: "Dev Pedro",
-  description:
-    "Desenvolvedor focado em criar experiências modernas, rápidas e acessíveis.",
+}
+
+export const HomeContent = {
+  title_half_one: "Da Ideia Criativa para o",
+  title_half_two: "Código Eficiente",
+  main_text: "Meu trabalho é transformar conceitos em interfaces funcionais e impactantes. Desenvolvo páginas e aplicações com foco na experiência do usuário e performance eficiente.",
 }

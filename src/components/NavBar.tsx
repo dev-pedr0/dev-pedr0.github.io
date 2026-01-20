@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { images, navItems, siteContent } from "../content"
+import { images, navItems, NavContent } from "../content"
 import SocialLinks from "./SocialLinks"
 import { NavLink } from "react-router-dom";
 
@@ -12,7 +12,7 @@ const NavBar = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-2 font-bold">
           <img src={images.logo} alt="Logo" className="w-10 sm:w-12" />
-          <span className="text-accent-primary">{siteContent.brand}</span>
+          <span className="text-accent-primary">{NavContent.brand}</span>
         </NavLink>
 
         {/* Botão mobile */}
