@@ -61,4 +61,14 @@ export const CertificationContent = [
     title: "Certificação em Docker",
     image: "/public/certifications/Certificado Docker.png",
   },
-]
+];
+
+export const ContactContent = {
+  title: "Meus Contatos",
+  email: "pedro4costa@outlook.com",
+  email_href: "pedro4costa@outlook.com",
+  linkedin: "https://www.linkedin.com/in/pedro-conceicao1/",
+  linkedin_short: "/pedro-conceicao1",
+  github: "https://github.com/dev-pedr0",
+  github_short: "/dev-pedr0",
+}
