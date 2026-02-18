@@ -21,10 +21,12 @@ const FilterButtons = ({ active, onChange }: Props) => {
           onClick={() => onChange(filter)}
           className={`
             px-3 py-2
+            cursor-pointer
             text-xs
             rounded-full
             transition
             sm:px-4 sm:text-sm
+            2xl:text-lg
             ${
               active === filter
                 ? "bg-accent-primary text-bg-primary"

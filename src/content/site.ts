@@ -22,32 +22,36 @@ export const AboutContent = {
 
 export const CertificationContent = [
   {
-    title: "Pós Graduação em Gestão de TI",
-    image: "/certifications/Diploma Uninter.pdf",
-  },
-  {
     title: "Graduação em Análise e Desenvolvimento de Sistemas",
     image: null,
   },
   {
+    title: "Graduação em Engenharia Mecânica",
+    image: "/certifications/Diploma Eng Mecanica.pdf",
+  },
+  {
+    title: "Pós Graduação em Gestão de TI",
+    image: "/certifications/Diploma Uninter.pdf",
+  },
+  {
     title: "Certificação no Curso CC50",
-    image: "/public/certifications/Certificado CC50 - Pedro Costa.pdf",
+    image: "/certifications/Certificado CC50 - Pedro Costa.pdf",
   },
   {
     title: "Certificação em HTML e CSS",
-    image: "/public/certifications/Certificado HTML5 e CSS3.jpg",
+    image: "/certifications/Certificado HTML5 e CSS3.jpg",
   },
   {
     title: "Certificação em Javascript",
-    image: "/public/certifications/Certificado Javascript.jpg",
+    image: "/certifications/Certificado Javascript.jpg",
   },
   {
     title: "Certificação em Bootstrap",
-    image: "/public/certifications/Certificado bootstrap.jpg",
+    image: "/certifications/Certificado bootstrap.jpg",
   },
   {
     title: "Certificação em Vue.js",
-    image: "/public/certifications/Certificado Vuejs.jpg",
+    image: "/certifications/Certificado Vuejs.jpg",
   },
   {
     title: "Certificação em React",
@@ -55,11 +59,11 @@ export const CertificationContent = [
   },
   {
     title: "Certificação em Git",
-    image: "/public/certifications/Certificado Git-Github.jpg",
+    image: "/certifications/Certificado Git-Github.jpg",
   },
   {
     title: "Certificação em Docker",
-    image: "/public/certifications/Certificado Docker.png",
+    image: "/certifications/Certificado Docker.png",
   },
 ];
 

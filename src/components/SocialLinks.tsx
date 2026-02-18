@@ -15,7 +15,7 @@ const SocialLinks = () => {
             <img
               src={social.icon}
               alt={social.name}
-              className="w-8 sm:w-9 lg:w-7"
+              className="w-8 sm:w-9 lg:w-7 2xl:w-10"
             />
           </a>
         </li>
