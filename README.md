@@ -2,7 +2,7 @@
 
 Meu portfólio pessoal como desenvolvedor, criado para apresentar projetos, certificações e informações de contato de forma moderna, responsiva e performática.
 
-🔗 **Acesse:** https://dev-pedr0.github.io
+🔗 **Acesse:** https://dev-pedr0-portifolio.vercel.app
 
 ---
 
@@ -15,7 +15,7 @@ Meu portfólio pessoal como desenvolvedor, criado para apresentar projetos, cert
 - **React Router (HashRouter)**
 - **Framer Motion** (transições)
 - **EmailJS** (formulário de contato)
-- **GitHub Pages** (deploy)
+- **Vercel** (deploy)
 
 ---
 
@@ -30,22 +30,10 @@ Meu portfólio pessoal como desenvolvedor, criado para apresentar projetos, cert
 
 ---
 
-## 📂 Estrutura do projeto
-src/
-├─ components/ # Componentes reutilizáveis
-├─ content/ # Textos, links, imagens e dados
-├─ layouts/ # Layout base
-├─ pages/ # Páginas (Home, Projetos, Sobre, etc)
-├─ routes/ # Configuração de rotas
-└─ styles/ # CSS global
-
----
-
 ## 📬 Contato
 
 - **Email:** pedro4costa@outlook.com  
 - **LinkedIn:** [pedro-conceicao1](https://www.linkedin.com/in/pedro-conceicao1/)  
-- **GitHub:** [dev-pedr0](https://github.com/dev-pedr0)
 
 ---
 
