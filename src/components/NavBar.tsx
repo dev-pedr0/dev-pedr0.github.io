@@ -11,7 +11,7 @@ const NavBar = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-2 font-bold">
-          <img src={images.logo} alt="Logo" className="w-10 sm:w-12" />
+          <img src={images.logo} alt="Logo" className="w-10 sm:w-12 2xl:w-16" />
           <span className="text-accent-primary">{NavContent.brand}</span>
         </NavLink>
 
@@ -36,6 +36,7 @@ const NavBar = () => {
                 ? "text-accent-primary"
                 : "text-text-primary hover:text-accent-primary"}
                 hover:text-accent-primary transition
+                text-xl
               `
               }
             >

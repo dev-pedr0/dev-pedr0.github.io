@@ -1,3 +1,5 @@
+import { ContactContent } from "./site"
+
 export interface SocialLink {
   name: string
   href: string
@@ -7,17 +9,17 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/pedro-conceicao1/",
+    href: ContactContent.linkedin,
     icon: "/imgs/linkedin.png",
   },
   {
     name: "GitHub",
-    href: "https://github.com/dev-pedr0",
+    href: ContactContent.github,
     icon: "/imgs/github.png",
   },
   {
     name: "Email",
-    href: "mailto:pedro4costa@outlook.com",
+    href: `mailto:${ContactContent.email_href}`,
     icon: "/imgs/email.png",
   },
 ]
