@@ -7,7 +7,7 @@ import type { Project } from "../content"
 import { getProjects, type StrapiProject } from "../utils/strapi";
 import { isValidCategory } from "../utils/validateCatogory";
 import { useQuery } from "@tanstack/react-query";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import ProjectModal from "../components/ProjectModal";
 
 type ProjectItem = Project;
@@ -71,31 +71,31 @@ const Projects = () => {
           onChange={setActiveFilter}
         />
 
-        <div
-          className="
-            flex flex-wrap
-            justify-center
-            gap-4
-            sm:gap-6
-          "
-        >
-          {/* Projetos Filtrados */}
-          {filteredProjects.map(project => (
-            <div 
-              key={project.id}
-              className="
-                w-full
-                sm:w-[calc(50%-0.75rem)]
-                lg:w-[calc(33.333%-1rem)]
-              "
-              onClick={() => setSelectedProject(project)}
-            >
-              <ProjectCard
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+          <AnimatePresence>
+            {/* Projetos Filtrados */}
+            {filteredProjects.map(project => (
+              <motion.div 
                 key={project.id}
-                project={project}
-              />
-            </div>
-          ))}
+                className="
+                  w-full
+                  sm:w-[calc(50%-0.75rem)]
+                  lg:w-[calc(33.333%-1rem)]
+                "
+                onClick={() => setSelectedProject(project)}
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.3 }}
+              >
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                />
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
 
         {/* Seta */}
