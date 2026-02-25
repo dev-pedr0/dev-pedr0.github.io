@@ -13,10 +13,10 @@ export default function Contact() {
         if (!formRef.current) return
 
         emailjs.sendForm(
-        "service_hfu5rlj",
-        "template_qjnodrs",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        "LCTgshI0j4Qgw9bKh"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then(() => {
         alert("Mensagem enviada com sucesso!")
