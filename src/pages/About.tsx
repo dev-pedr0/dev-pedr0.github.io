@@ -6,31 +6,23 @@ import { AboutContent } from "../content"
 const About = () => {
   return (
     <PageTransition>
-        <div className="w-full mx-auto max-w-5xl bg-bg-secondary rounded-2xl p-6 sm:p-8 flex flex-col gap-12">          
-          {/* Conteúdo da página */}
-          <TextImage
-            title={AboutContent.title_one}
-            image={AboutContent.image_one}
-            text={AboutContent.text_one}
-          />
-          <TextImage
-            title={AboutContent.title_two}
-            image={AboutContent.image_two}
-            text={AboutContent.text_two}
-            imagePosition="left"
-          />
-          <TextImage
-            title={AboutContent.title_three}
-            image={AboutContent.image_three}
-            text={AboutContent.text_three}
-          />
+      <div className="w-full mx-auto max-w-5xl bg-bg-secondary rounded-2xl p-6 sm:p-8 flex flex-col gap-12">
 
-          {/* Seta */}
-          <ScrollArrow
-              to="/contato"
-              label="Ver Contato"
+        {AboutContent.map((section, index) => (
+          <TextImage
+            key={index}
+            title={section.title}
+            image={section.image}
+            text={section.text}
+            imagePosition={index % 2 === 1 ? "left" : "right"}
           />
-        </div>
+        ))}
+
+        <ScrollArrow
+          to="/contato"
+          label="Ver Contato"
+        />
+      </div>
     </PageTransition>
   )
 }
