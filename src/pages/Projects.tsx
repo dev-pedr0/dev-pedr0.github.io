@@ -1,22 +1,66 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import PageTransition from "../components/PageTransition"
-import { projects } from "../content";
+
 import FilterButtons from "../components/FilterButtons";
 import ProjectCard from "../components/ProjectCard";
 import ScrollArrow from "../components/ScrollArrow";
 import type { Project } from "../content"
+import { getProjects, type StrapiProject } from "../utils/strapi";
+import { isValidCategory } from "../utils/validateCatogory";
 
 type ProjectItem = Project;
 
 const Projects = () => {
+  const [strapiProjects, setStrapiProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [activeFilter, setActiveFilter] = useState("todos");
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null)
+
+  // Buscador de projetos
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const strapiData = await getProjects();
+
+        const formatted: Project[] = strapiData.map((p: StrapiProject) => {
+          const mediaUrl = p.media?.url
+          ? p.media.url
+            : '/fallback.jpg';
+
+          const mediaTypeVerified = p.mediaType === "video" ? "video" : "image";
+          const validCategory = isValidCategory(p.category)
+            ? p.category
+            : "fullstack"
+          return {
+            id: p.documentId,
+            title: p.title,
+            description: p.description,
+            media: mediaUrl,
+            mediaType: mediaTypeVerified,
+            link: p.link,
+            category: validCategory,
+          };
+        });
+        setStrapiProjects(formatted)
+      } catch (err) {
+        setError('Não foi possível carregar os projetos.');
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchProjects();
+  }, []);
 
   // Filtro para apresentar projetos
   const filteredProjects =
     activeFilter === "todos"
-      ? projects
-      : projects.filter(p => p.category === activeFilter);
+      ? strapiProjects
+      : strapiProjects.filter(p => p.category === activeFilter);
+  
+  if (loading) return <div className="text-center py-10">Carregando projetos...</div>;
+  if (error) return <div className="text-center py-10 text-red-500">{error}</div>;
   
   return (
     <PageTransition>
