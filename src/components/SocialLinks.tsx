@@ -9,7 +9,8 @@ const SocialLinks = () => {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="hove-click block"
+            className="block transition-all
+                duration-300 ease-in-out md:hover:scale-110"
             aria-label={social.name}
           >
             <img

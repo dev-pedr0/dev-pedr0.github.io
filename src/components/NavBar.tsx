@@ -10,7 +10,7 @@ const NavBar = () => {
     <header className="relative z-20">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <NavLink to="/" className="flex items-center gap-2 font-bold">
+        <NavLink to="/" className="flex items-center gap-2 font-bold transition-all duration-300 ease-in-out md:hover:scale-110">
           <img src={images.logo} alt="Logo" className="w-10 sm:w-12 2xl:w-16" />
           <span className="text-accent-primary">{NavContent.brand}</span>
         </NavLink>
@@ -35,8 +35,8 @@ const NavBar = () => {
                 ${isActive
                 ? "text-accent-primary"
                 : "text-text-primary hover:text-accent-primary"}
-                hover:text-accent-primary transition
-                text-xl
+                hover:text-accent-primary text-xl transition-all
+                duration-300 ease-in-out md:hover:scale-110
               `
               }
             >
