@@ -37,8 +37,8 @@ const Certification = () => {
                     rounded-lg
                     bg-accent-primary
                     text-bg-primary
-                    hover:opacity-90
-                    transition sm:self-auto
+                    hover:opacity-60
+                    transition-all duration-300 sm:self-auto
                   "
                 >
                   Ver certificado

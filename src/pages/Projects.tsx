@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import ScrollArrow from "../components/ScrollArrow";
 import type { Project } from "../content"
 import { getProjects, type StrapiProject } from "../utils/strapi";
-import { isValidCategory } from "../utils/validateCatogory";
+import { isValidCategory } from "../utils/validateCategory";
 import { useQuery } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "framer-motion";
 import ProjectModal from "../components/ProjectModal";
