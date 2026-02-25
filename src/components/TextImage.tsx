@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 type Props = {
   title: string
   text: string
@@ -16,21 +18,14 @@ const TextImage = ({
     const isImageLeft = imagePosition === "left";
 
     return (
-    <section
-        className={`
-            w-full
-            flex flex-col
-            gap-6
-
-            sm:gap-8
-            md:gap-10
-
-            lg:flex-row
-            lg:items-center
-            lg:gap-12
-
-            ${isImageLeft ? "lg:flex-row-reverse" : ""}
-        `}
+    <motion.section
+        initial={{ opacity: 0, x: isImageLeft ? 80 : -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className={`w-full flex flex-col gap-6 sm:gap-8 md:gap-10
+        lg:flex-row lg:items-center lg:gap-12
+        ${isImageLeft ? "lg:flex-row-reverse" : ""}`}
         >
         <div
             className="
@@ -109,7 +104,7 @@ const TextImage = ({
             "
             />
         </div>
-    </section>
+    </motion.section>
   )
 }
 
