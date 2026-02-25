@@ -25,7 +25,7 @@ const Projects = () => {
 
         const formatted: Project[] = strapiData.map((p: StrapiProject) => {
           const mediaUrl = p.media?.url
-          ? `${import.meta.env.VITE_STRAPI_URL}${p.media?.url}`
+          ? p.media.url
             : '/fallback.jpg';
 
           const mediaTypeVerified = p.mediaType === "video" ? "video" : "image";
