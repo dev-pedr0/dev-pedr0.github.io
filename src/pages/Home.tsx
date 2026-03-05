@@ -9,19 +9,20 @@ export default function Home() {
             <section
                 id="home"
                 className="
-                    relative z-10
+                    relative
                     flex flex-col items-center justify-center
                     text-center
                     px-6
                     min-h-[70vh]
-                    md:mt-10
-                    md:px-30
-                    lg:mt-18
-                    2xl:mt-25
                 "
             >
                 {/* Texto principal */}
-                <div className="max-w-4xl">
+                <div 
+                className="
+                max-w-lg
+                lg:max-w-2xl
+                2xl:max-w-3xl
+                ">
                     <h1
                         className="
                             text-2xl font-extrabold leading-tight
@@ -46,8 +47,6 @@ export default function Home() {
                             sm:text-base
                             md:text-lg
                             lg:text-xl
-                            lg:px-10
-                            2xl:px-20
                             [text-shadow:0_1px_0_var(--color-accent-primary)]
                         "
                     />

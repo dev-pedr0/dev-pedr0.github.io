@@ -8,7 +8,7 @@ const Layout = () => {
       className="
         min-h-screen
         bg-bg-primary
-        flex justify-center
+        flex flex-col justify-center
       "
       style={{
         backgroundImage: `url(${images.background})`,
@@ -17,35 +17,30 @@ const Layout = () => {
         backgroundSize: "100% auto",
       }}
     >
-      <div
+      {/* Navbar */}
+      <header 
         className="
-          container-page
-          relative
-          flex flex-col
-          gap-6
+        m-2
+        sm:mx-4
+        lg:mx-6
+        2xl:mx-10
         "
       >
-        {/* Navbar */}
         <NavBar />
+      </header>
 
-        {/* Conteúdo das páginas com transição */}
-        <main
-          className="
-            relative z-10
-            flex flex-col
-            items-center justify-center
-            text-center
-            gap-6
-            min-h-[70vh]
-            sm:min-h-[75vh]
-            md:min-h-[80vh]
-            lg:min-h-[85vh]
-          "
-        >
-          <Outlet />
-
-        </main>
-      </div>
+      {/* Conteúdo das páginas com transição */}
+      <main
+        className="
+          relative z-10
+          flex flex-col
+          grow
+          items-center justify-center
+          text-center
+        "
+      >
+        <Outlet />
+      </main>
     </div>
   )
 }

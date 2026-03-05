@@ -7,7 +7,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="relative z-20">
+    <div className="relative z-20">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-2 font-bold transition-all duration-300 ease-in-out md:hover:scale-110">
@@ -87,7 +87,7 @@ const NavBar = () => {
 
         <SocialLinks />
       </nav>
-    </header>
+    </div>
   )
 }
 
