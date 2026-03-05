@@ -1,5 +1,5 @@
 export const NavContent = {
-  brand: "Dev Pedro - Fullstack Dev",
+  brand: "Dev Pedro",
 }
 
 export const HomeContent = {
