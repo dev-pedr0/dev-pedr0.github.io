@@ -5,9 +5,9 @@ export interface NavItem {
 
 export const navItems = [
   { label: "Home", path: "/" },
-  { label: "Projetos", path: "/projetos" },
-  { label: "Certificações", path: "/certificacoes" },
   { label: "Sobre", path: "/sobre" },
+  { label: "Certificações", path: "/certificacoes" },
+  { label: "Projetos", path: "/projetos" },
   { label: "Contato", path: "/contato" },
 ]
 
