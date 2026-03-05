@@ -1,5 +1,4 @@
 import PageTransition from "../components/PageTransition"
-import ScrollArrow from "../components/ScrollArrow"
 import TextImage from "../components/TextImage"
 import { AboutContent } from "../content"
 
@@ -17,11 +16,6 @@ const About = () => {
             imagePosition={index % 2 === 1 ? "left" : "right"}
           />
         ))}
-
-        <ScrollArrow
-          to="/contato"
-          label="Ver Contato"
-        />
       </div>
     </PageTransition>
   )

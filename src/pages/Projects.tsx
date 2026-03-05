@@ -2,7 +2,6 @@ import { useState } from "react"
 import PageTransition from "../components/PageTransition"
 import FilterButtons from "../components/FilterButtons";
 import ProjectCard from "../components/ProjectCard";
-import ScrollArrow from "../components/ScrollArrow";
 import type { Project } from "../content"
 import { getProjects, type StrapiProject } from "../utils/strapi";
 import { isValidCategory } from "../utils/validateCategory";
@@ -97,12 +96,6 @@ const Projects = () => {
             ))}
           </AnimatePresence>
         </div>
-
-        {/* Seta */}
-        <ScrollArrow
-            to="/certificacoes"
-            label="Ver Certificações"
-        />
 
         {/* Modal */}
         <AnimatePresence>

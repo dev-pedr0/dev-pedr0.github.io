@@ -1,5 +1,4 @@
 import PageTransition from "../components/PageTransition"
-import ScrollArrow from "../components/ScrollArrow"
 import { CertificationContent } from "../content"
 
 const Certification = () => {
@@ -51,9 +50,6 @@ const Certification = () => {
             </li>
           ))}
         </ul>
-
-        {/* Seya */}
-        <ScrollArrow to="/sobre" label="Sobre mim" />
       </div>
     </PageTransition>
   )

@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import PageTransition from "../components/PageTransition";
-import ScrollArrow from "../components/ScrollArrow";
 import { ContactContent } from "../content";
 import emailjs from "@emailjs/browser"
 
@@ -175,8 +174,6 @@ export default function Contact() {
                         </section>
                     </div>
                 </div>
-
-                <ScrollArrow to="/" label="Voltar ao início" />
             </div>
         </PageTransition>
     )

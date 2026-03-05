@@ -10,3 +10,11 @@ export const navItems = [
   { label: "Sobre", path: "/sobre" },
   { label: "Contato", path: "/contato" },
 ]
+
+export const pageFlow = [
+  { path: "/", label: "Sobre Mim", next: "/sobre" },
+  { path: "/sobre", label: "Ver Certificações", next: "/certificacoes" },
+  { path: "/certificacoes", label: "Ver Projetos", next: "/projetos" },
+  { path: "/projetos", label: "Ver Contato", next: "/contato" },
+  { path: "/contato", label: "Voltar ao Início", next: "/" },
+];

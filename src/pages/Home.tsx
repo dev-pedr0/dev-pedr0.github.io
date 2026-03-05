@@ -1,5 +1,4 @@
 import PageTransition from "../components/PageTransition";
-import ScrollArrow from "../components/ScrollArrow";
 import TypeWriter from "../components/TypeWriter";
 import { HomeContent } from "../content";
 
@@ -53,11 +52,11 @@ export default function Home() {
                 </div>
 
                 {/* Seta */}
-                <ScrollArrow
+                {/* <ScrollArrow
                     to="/projetos"
                     label="Ver projetos"
                     absolute={true}
-                />
+                /> */}
             </section>
         </PageTransition>    
     )

@@ -5,14 +5,12 @@ type Props = {
     to: string
     label?: string
     className?: string
-    absolute?: boolean
 }
 
 const ScrollArrow = ({
   to,
   label = "Ver mais",
   className = "",
-  absolute = false,
 }: Props) => {
     return (
         <Link
@@ -26,7 +24,6 @@ const ScrollArrow = ({
                 text-text-secondary
                 transition-colors
                 hover:text-accent-primary
-                ${absolute ? "absolute bottom-8 left-1/2 -translate-x-1/2" : "mt-8"}
                 ${className}
             `}
         >
@@ -36,6 +33,7 @@ const ScrollArrow = ({
                 opacity-80
                 group-hover:opacity-100
                 transition-opacity
+                2xl:text-lg
                 "
             >
                 {label}

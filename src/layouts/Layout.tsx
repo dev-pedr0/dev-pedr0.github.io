@@ -1,8 +1,12 @@
 import NavBar from "../components/NavBar"
-import { Outlet } from "react-router-dom"
-import { images } from "../content"
+import { Outlet, useLocation } from "react-router-dom"
+import { images, pageFlow } from "../content"
+import ScrollArrow from "../components/ScrollArrow";
 
 const Layout = () => { 
+  const location = useLocation();
+  const current = pageFlow.find((p) => p.path === location.pathname);
+
   return (
     <div
       className="
@@ -32,7 +36,7 @@ const Layout = () => {
       {/* Conteúdo das páginas com transição */}
       <main
         className="
-          relative z-10
+          relative
           flex flex-col
           grow
           items-center justify-center
@@ -41,6 +45,16 @@ const Layout = () => {
       >
         <Outlet />
       </main>
+
+      <footer>
+        {current &&
+          <ScrollArrow
+            to={current.next}
+            label={current.label}
+            className="my-2"
+          />
+        }
+      </footer>
     </div>
   )
 }
