@@ -6,12 +6,6 @@ import { HomeContent } from "../content";
 export default function Home() {
     return (
         <PageTransition>
-            
-            {/* Losango decorativo */}
-            <div
-            className="hidden sm:block bg-diamond"
-            />
-
             <section
                 id="home"
                 className="
@@ -27,7 +21,7 @@ export default function Home() {
                 "
             >
                 {/* Texto principal */}
-                <div className="max-w-xl">
+                <div className="max-w-4xl">
                     <h1
                         className="
                             text-2xl font-extrabold leading-tight
@@ -51,8 +45,10 @@ export default function Home() {
                             text-sm text-text-secondary
                             sm:text-base
                             md:text-lg
+                            lg:text-xl
                             lg:px-10
                             2xl:px-20
+                            [text-shadow:0_1px_0_var(--color-accent-primary)]
                         "
                     />
                 </div>
