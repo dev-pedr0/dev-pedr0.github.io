@@ -49,6 +49,10 @@ const Projects = () => {
       ? strapiProjects
       : strapiProjects.filter(p => p.category === activeFilter);
   
+  const openProjectModal = (project: Project) => {
+    setSelectedProject(project);
+  };
+
   if (isLoading) return <p>Carregando...</p>;
   if (isError) return <p>Erro ao carregar projetos.</p>;
   
@@ -70,7 +74,7 @@ const Projects = () => {
           onChange={setActiveFilter}
         />
 
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <div className="flex flex-wrap justify-center gap-2">
           <AnimatePresence>
             {/* Projetos Filtrados */}
             {filteredProjects.map(project => (
@@ -79,9 +83,8 @@ const Projects = () => {
                 className="
                   w-full
                   sm:w-[calc(50%-0.75rem)]
-                  lg:w-[calc(33.333%-1rem)]
+                  mx-auto
                 "
-                onClick={() => setSelectedProject(project)}
                 layout
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -91,6 +94,7 @@ const Projects = () => {
                 <ProjectCard
                   key={project.id}
                   project={project}
+                  onOpen={openProjectModal}
                 />
               </motion.div>
             ))}

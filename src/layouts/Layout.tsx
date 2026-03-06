@@ -39,7 +39,7 @@ const Layout = () => {
           relative
           flex flex-col
           grow
-          items-center justify-center
+          items-center
           text-center
         "
       >

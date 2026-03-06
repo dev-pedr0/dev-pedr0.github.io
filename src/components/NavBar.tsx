@@ -25,7 +25,7 @@ const NavBar = () => {
         </button>
 
         {/* Menu desktop */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6 lg:mr-3">
           {navItems.map(item => (
             <NavLink
               key={item.label}
