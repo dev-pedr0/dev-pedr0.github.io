@@ -160,13 +160,9 @@ export default function Contact() {
                                     className="
                                     mt-2
                                     px-6 py-3
-                                    rounded-lg
-                                    bg-accent-primary
-                                    text-bg-primary
                                     font-medium
-                                    hover:opacity-90
                                     hover:cursor-pointer
-                                    transition
+                                    btn-effect
                                     "
                                 >
                                     Enviar

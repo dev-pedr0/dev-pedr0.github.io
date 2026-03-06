@@ -127,6 +127,22 @@
     border-radius: 0.75rem;
     padding: 1rem;
   }
+
+  .btn-effect {
+    background-color: rgba(0, 188, 212, 0.15);
+    color: var(--color-accent-primary);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 188, 212, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .btn-effect:hover {
+    background-color: rgba(0, 188, 212, 0.25);
+    border-color: rgba(0, 188, 212, 0.5);
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+  }
 }
 
 /* =========================

@@ -33,11 +33,8 @@ const Certification = () => {
                   className="
                     text-sm
                     px-4 py-2
-                    rounded-lg
-                    bg-accent-primary
-                    text-bg-primary
-                    hover:opacity-60
-                    transition-all duration-300 sm:self-auto
+                    sm:self-auto
+                    btn-effect
                   "
                 >
                   Ver certificado

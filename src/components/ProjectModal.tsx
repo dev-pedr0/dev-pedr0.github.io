@@ -84,14 +84,7 @@ const ProjectModal = ({ project, onClose }: Props) => {
               className="
                 inline-flex items-center gap-2.5
                 mt-3 px-6 py-3.5
-                bg-accent-primary/15 hover:bg-accent-primary/25
-                text-accent-primary font-medium
-                rounded-lg
-                border border-accent-primary/30
-                transition-all duration-300
-                hover:border-accent-primary/50
-                hover:shadow-[0_0_15px_rgba(0,188,212,0.2)]
-                active:scale-95
+                btn-effect
               "
             >
               Ver projeto completo →
