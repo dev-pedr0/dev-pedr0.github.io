@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar"
 import { Outlet, useLocation } from "react-router-dom"
 import { images, pageFlow } from "../content"
-import ScrollArrow from "../components/ScrollArrow";
+import NextSectionLink from "../components/NextSectionLink";
 
 const Layout = () => { 
   const location = useLocation();
@@ -46,15 +46,11 @@ const Layout = () => {
         <Outlet />
       </main>
 
-      <footer>
+      <footer className="m-3">
         {current &&
-          <ScrollArrow
-            to={current.next}
-            label={current.label}
-            className="my-2"
-          />
+          <NextSectionLink to={current.next} label={current.label}/>
         }
-      </footer>
+        </footer>
     </div>
   )
 }

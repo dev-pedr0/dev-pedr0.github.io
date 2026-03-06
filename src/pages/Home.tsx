@@ -51,12 +51,6 @@ export default function Home() {
                     />
                 </div>
 
-                {/* Seta */}
-                {/* <ScrollArrow
-                    to="/projetos"
-                    label="Ver projetos"
-                    absolute={true}
-                /> */}
             </section>
         </PageTransition>    
     )
