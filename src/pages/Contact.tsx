@@ -39,7 +39,7 @@ export default function Contact() {
                 >
                     <div 
                         className="grid grid-cols-1 md:grid-cols-2
-                        gap-10 sm:w-md md:w-2xl lg:w-3xl xl:w-5xl 2xl:h-140"
+                        gap-10 sm:w-md md:w-3xl md:mx-2 lg:w-4xl xl:w-5xl 2xl:h-140"
                     >
                         {/* Lista de contatos */}
                         <section className="
@@ -64,7 +64,7 @@ export default function Contact() {
                                 {
                                     label: "Email",
                                     value: ContactContent.email,
-                                    href: ContactContent.email_href,
+                                    href: `mailto:${ContactContent.email_href}`,
                                 },
                                 {
                                     label: "LinkedIn",
@@ -165,6 +165,7 @@ export default function Contact() {
                                     text-bg-primary
                                     font-medium
                                     hover:opacity-90
+                                    hover:cursor-pointer
                                     transition
                                     "
                                 >
