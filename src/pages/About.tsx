@@ -9,9 +9,9 @@ const About = () => {
     <PageTransition>
       <div className="w-full mx-auto max-w-5xl p-6 sm:p-8 flex flex-col gap-12">
         <TextImage
-          title="Quem eu sou"
-          text="dhfsdgjksdfçhgjaorfgjsçgj]~fglj~sfdgklsa~çdfasdfbdgh"
-          image="/pedro 3.jpeg"
+          title={AboutContent.title}
+          text={AboutContent.text}
+          image={AboutContent.image}
         />
         <div
         className="

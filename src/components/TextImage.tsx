@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 
 type Props = {
-  title: string
+  title?: string
   text: string
   image: string
   imageAlt?: string
@@ -36,19 +36,21 @@ const TextImage = ({
             "
         >
             {/* TÍTULO */}
-            <h3
-            className="
-                mb-3
-                text-base
-                font-extrabold
-                uppercase
+            {title && (
+                <h3
+                className="
+                    mb-3
+                    text-base
+                    font-extrabold
+                    uppercase
 
-                sm:text-lg
-                md:text-xl
-            "
-            >
-            {title}
-            </h3>
+                    sm:text-lg
+                    md:text-xl
+                "
+                >
+                {title}
+                </h3>
+            )}
 
             {/* TEXTO */}
             <p
@@ -57,11 +59,14 @@ const TextImage = ({
                 leading-relaxed
                 text-text-secondary
                 text-justify
+                mx-auto
                 whitespace-pre-line
 
                 sm:text-base
+                sm:max-w-120
                 md:text-lg
                 md:leading-loose
+                md:max-w-130
             "
             >
             {text}
@@ -91,7 +96,7 @@ const TextImage = ({
                 shadow-lg
 
                 sm:max-w-120
-                sm:h-64
+                sm:h-120
 
                 md:max-w-130
                 md:h-130
