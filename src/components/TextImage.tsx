@@ -94,7 +94,7 @@ const TextImage = ({
                 sm:h-64
 
                 md:max-w-130
-                md:h-72
+                md:h-130
 
                 lg:max-w-none
                 lg:h-80
