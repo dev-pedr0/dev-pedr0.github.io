@@ -53,6 +53,10 @@ export const CertificationContent = [
     image: null,
   },
   {
+    title: "Certificação em Angular",
+    image: "/certifications/Certificado - Angular.pdf",
+  },
+  {
     title: "Certificação em Git",
     image: "/certifications/Certificado Git-Github.jpg",
   },
